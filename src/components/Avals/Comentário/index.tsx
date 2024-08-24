@@ -1,4 +1,9 @@
 import "./coment.css"
+import estrela1 from '../../../assets/img/estrela1.svg'
+import seta_girada from '../../../assets/img/seta_girada.svg';
+import joinha from '../../../assets/img/joinha.svg';
+import deslike from '../../../assets/img/deslike.svg';
+import menu from '../../../assets/img/menu_3p.svg';
 
 interface ComentProps {
     usuario : string
@@ -16,7 +21,7 @@ function Coment( props: ComentProps){
             <div className="desc_aval">
                 <p id="tittle_aval">AVALIAÇÃO EM DESTAQUE</p>
                 <p id="star">
-                    <img src="../public/img/estrela1.svg" alt="estrela de avaliação" />
+                    <img src= {estrela1} alt="estrela de avaliação" />
                     10<a>/10</a>
                 </p>
             </div>
@@ -35,7 +40,7 @@ function Coment( props: ComentProps){
                 {props.spoiler ? (
                     <p>
                         <a className="spoilerStyle">
-                            Warning: Spoilers! <img src="../public/img/seta_girada.svg"></img>
+                            Warning: Spoilers! <img src={seta_girada}></img>
                         </a>
                     </p>
                 ):(
@@ -46,13 +51,13 @@ function Coment( props: ComentProps){
             </div>
             <div className="like-menu">
                 <div className="likes">
-                    <img src="../public/img/joinha.svg" alt="Like" />
+                    <img src={joinha} alt="Like" />
                     {props.likes}
-                    <img src="../public/img/deslike.svg" alt="Deslike" />
+                    <img src={deslike} alt="Deslike" />
                     {props.deslike}
                 </div>
                 <div className="menu_3pt">
-                    <img src="../public/img/menu_3p.svg" alt="Menu de 3 pontos" />
+                    <img src={menu} alt="Menu de 3 pontos" />
                 </div>
             </div>
         </div>

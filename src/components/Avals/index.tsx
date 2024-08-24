@@ -1,6 +1,7 @@
 import React from "react";
 import Coment from "./Comentário";
 import "./avals.css"
+import seta from '../../assets/img/seta.svg';
 
 const Avals : React.FC = () => {
 
@@ -10,7 +11,7 @@ const Avals : React.FC = () => {
         <div className="avals">
             <div className="enr">
                 <div>
-                    <img src="../public/img/seta.svg" alt="" />ENREDO
+                    <img src={seta} alt="" />ENREDO
                 </div>
                 <p>
                     Kratos and his son Atreus face the oncoming Norse apocalypse, Ragnarok.
@@ -19,7 +20,7 @@ const Avals : React.FC = () => {
             <div className="review">
                 <div className="av_tittle">
                     <p>
-                        <img src="../public/img/seta.svg" alt="" />
+                        <img src={seta} alt="" />
                         AVALIAÇÕES DE USUÁRIOS
                     </p>
                     + Avaliar
